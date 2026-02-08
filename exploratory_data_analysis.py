@@ -39,7 +39,7 @@ import pyarrow.parquet as pq
 from google.cloud import storage
 import io
 
-PROJECT_ID = "vdeyellow-taxi-trips-analytics"
+PROJECT_ID = "calcium-rigging-486816-s8"
 BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 GCS_FOLDER = "dataset/trips/"
 

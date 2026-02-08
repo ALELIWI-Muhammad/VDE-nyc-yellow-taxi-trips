@@ -6,7 +6,7 @@ import io
 from datetime import UTC  # Import UTC explicitly
 
 # Set project-specific variables
-PROJECT_ID = "vdeyellow-taxi-trips-analytics"
+PROJECT_ID = "calcium-rigging-486816-s8"
 BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 GCS_FOLDER = "dataset/trips/"
 GCS_LOG_FOLDER = "from-git/logs/"

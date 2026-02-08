@@ -5,7 +5,7 @@ import io
 from datetime import UTC  # Import UTC explicitly
 
 # Define project, dataset, and table details
-PROJECT_ID = "vdeyellow-taxi-trips-analytics"
+PROJECT_ID = "calcium-rigging-486816-s8"
 RAW_TABLE = f"{PROJECT_ID}.raw_yellowtrips.trips"
 TRANSFORMED_TABLE = f"{PROJECT_ID}.transformed_data.cleaned_and_filtered"
 GCS_LOG_FOLDER = "from-git/logs/"
