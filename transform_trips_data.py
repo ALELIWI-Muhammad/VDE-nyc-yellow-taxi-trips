@@ -9,7 +9,7 @@ PROJECT_ID = "vdeyellow-taxi-trips-analytics"
 RAW_TABLE = f"{PROJECT_ID}.raw_yellowtrips.trips"
 TRANSFORMED_TABLE = f"{PROJECT_ID}.transformed_data.cleaned_and_filtered"
 GCS_LOG_FOLDER = "from-git/logs/"
-BUCKET_NAME = f"{PROJECT_ID}-bucket"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 
 # Initialize BigQuery and GCS clients
 client = bigquery.Client(project=PROJECT_ID, location="US")

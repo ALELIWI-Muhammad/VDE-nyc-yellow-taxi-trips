@@ -39,8 +39,8 @@ import pyarrow.parquet as pq
 from google.cloud import storage
 import io
 
-PROJECT_ID = "nyc-yellow-trips"
-BUCKET_NAME = f"{PROJECT_ID}-data-buckets"
+PROJECT_ID = "vdeyellow-taxi-trips-analytics"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 GCS_FOLDER = "dataset/trips/"
 
 storage_client = storage.Client()
