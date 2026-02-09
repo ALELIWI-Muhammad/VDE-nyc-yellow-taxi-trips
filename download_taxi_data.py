@@ -61,7 +61,7 @@ def download_histo_data():
                         bucket = storage_client.bucket (BUCKET_NAME)
                         blob = bucket.blob(gcs_path)
                         blob.upload_from_string(response.content)
-                        logging.info(f"Uploaded {file_name) to GCS at {gcs_path)")
+                        logging.info(f"Uploaded {file_name} to GCS at {gcs_path}")
                     elif response.status_code == 404:
                         logging.warning(f"File {file_name} not found on source, skipping...")
                     else:
