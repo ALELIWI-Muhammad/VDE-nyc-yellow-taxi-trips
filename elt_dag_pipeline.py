@@ -38,7 +38,7 @@ with DAG(
     download_taxi_data = BashOperator(
         task_id="download_taxi_data",
         bash_command="""
-                    gsutil cp gs://vdeyellow-taxi-trips-analytics-data-bucket/from-git/download_taxi_data.py /tmp/download_taxi_data.py &&
+                    gsutil cp gs://calcium-rigging-486816-s8-data-bucket/from-git/download_taxi_data.py /tmp/download_taxi_data.py &&
                     python3 /tmp/download_taxi_data.py
                     """,
     )
@@ -46,7 +46,7 @@ with DAG(
     load_raw_trips_data = BashOperator(
         task_id="load_raw_trips_data",
         bash_command="""
-                    gsutil cp gs://vdeyellow-taxi-trips-analytics-data-bucket/from-git/load_raw_trips_data.py /tmp/load_raw_trips_data.py &&
+                    gsutil cp gs://calcium-rigging-486816-s8-data-bucket/from-git/load_raw_trips_data.py /tmp/load_raw_trips_data.py &&
                     python3 /tmp/load_raw_trips_data.py
                     """,
     )
@@ -54,7 +54,7 @@ with DAG(
     transform_trips_data = BashOperator(
         task_id="transform_trips_data",
         bash_command="""
-                    gsutil cp gs://vdeyellow-taxi-trips-analytics-data-bucket/from-git/transform_trips_data.py /tmp/transform_trips_data.py &&
+                    gsutil cp gs://calcium-rigging-486816-s8-data-bucket/from-git/transform_trips_data.py /tmp/transform_trips_data.py &&
                     python3 /tmp/transform_trips_data.py
                     """,
     )

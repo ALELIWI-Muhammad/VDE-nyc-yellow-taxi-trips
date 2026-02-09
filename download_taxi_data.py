@@ -47,7 +47,6 @@ def download_histo_data():
                 file_name = f"yellow_tripdata_{year}-{month:02d}.parquet"
                 gcs_path = f"{GCS_FOLDER}{file_name}"
                 download_url = f"https://d37ci6vzurychx.cloudfront.net/trip-data/{file_name}"
-
                 if file_exists_in_gcs(BUCKET_NAME, gcs_path):
                     logging.info(f"{file_name} already exists in GCS, skipping...")
                     continue
